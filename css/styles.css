@@ -211,10 +211,6 @@ body {
 
 /* OUR QUALITY SECTION */
 
-.our-quality-list-icon{
-
-}
-
 .our-quality {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -237,6 +233,19 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
 
+}
+
+.our-quality-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: #F4F4FD;
+    margin-bottom: 8px;
 }
 
 .our-quality-list-title {
@@ -309,6 +318,46 @@ body {
     text-align: center;
 }
 
+.our-team-social-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.our-team-social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.our-team-social-list-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-social-list-link:hover,
+.our-team-social-list-link:focus {
+    background-color: #31D0AA;
+}
+
+.our-team-social-list-icon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    fill: #F4F4FD;
+}
+
+
+
 /* OUR PORTFOLIO SECTION */
 
 .our-portfolio {
@@ -325,6 +374,35 @@ body {
 
 .our-portfolio-list-item {
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.our-portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-list-item:hover .hidden-text {
+    transform: translateY(0%);
+}
+
+.image-text{
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-list-container{
@@ -363,15 +441,17 @@ body {
 /* PAGE FOOTER */
 
 .page-footer {
+    max-width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #2E2F42;
+    
 }
 
 .container-footer {
     display: flex;
+    align-items: baseline;
 }
-
 
 .footer-logotype {
     font-family: Raleway, sans-serif;
