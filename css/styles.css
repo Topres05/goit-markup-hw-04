@@ -466,6 +466,10 @@ body {
 .container-footer {
     display: flex;
     align-items: baseline;
+    }
+
+.cotainer-webstudio {
+    margin-right: 120px;
 }
 
 .footer-logotype {
@@ -490,10 +494,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-}
-
-.cotainer-social-media {
-    margin-left: 120px;
 }
 
 .social-list-text {
